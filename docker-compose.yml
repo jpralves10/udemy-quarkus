@@ -39,7 +39,7 @@ services:
   
   prometheus_ifood:
     container_name: prometheus_ifood
-    image: prometheus-ifood
+    image: prometheus-ifood #igorufrn/prometheus-ifood #prometheus-ifood
     network_mode: "host"
     
   grafana_ifood:
@@ -81,7 +81,6 @@ services:
      - zookeeper
     environment:
      - ZOOKEEPER_CONNECT=zookeeper:2181
-     
   kafdrop:
     container_name: kafdrop_container
     image: obsidiandynamics/kafdrop:3.24.0

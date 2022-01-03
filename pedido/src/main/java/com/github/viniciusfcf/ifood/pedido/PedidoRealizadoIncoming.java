@@ -30,7 +30,6 @@ public class PedidoRealizadoIncoming {
         String json = JsonbBuilder.create().toJson(dto);
         elastic.index("pedidos", json);
         p.persist();
-
     }
 
     private Prato from(PratoPedidoDTO prato) {

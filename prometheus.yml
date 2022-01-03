@@ -29,10 +29,10 @@ scrape_configs:
     # se for um MAC, alterar localhost por host.docker.internal. Fonte: https://docs.docker.com/docker-for-mac/networking/#use-cases-and-workarounds
     - targets: ['localhost:9090']
     
-  - job_name: 'ifood-cadastro'
+  - job_name: 'ifood-marketplace'
 
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
     scrape_interval:     5s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
     static_configs:
-    - targets: ['localhost:8080']
+    - targets: ['localhost:8081']
